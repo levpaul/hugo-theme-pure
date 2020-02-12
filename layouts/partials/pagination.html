@@ -1,4 +1,5 @@
 {{ $paginator := .Paginate .Site.RegularPages }}
+{{ if ne $paginator.TotalPages 1 }}
 <nav class="bar bar-footer clearfix" data-stick-bottom>
   <div class="bar-inner">
     <ul class="pager pull-left">
@@ -25,3 +26,4 @@
     </div>
   </div>
 </nav>
+{{ end }}

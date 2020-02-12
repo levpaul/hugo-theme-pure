@@ -5,22 +5,8 @@
 <script>
     window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
 </script>
-<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/highlight.min.js"></script>
-{{- range .Site.Params.highlightjs.langs }}
-<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/{{.}}.min.js" defer></script>
-{{- end -}}
-<script>
-    hljs.configure({
-        tabReplace: '    ', // 4 spaces
-        classPrefix: ''     // don't append class prefix
-        // … other options aren't changed
-    })
-    hljs.initHighlightingOnLoad();
-</script>
 {{- $appjs := resources.Get "js/application.js" | resources.Minify | resources.Fingerprint}}
 <script src="{{- $appjs.Permalink }}"></script>
-{{- $plugin := resources.Get "js/plugin.js" | resources.Minify | resources.Fingerprint}}
-<script src="{{- $plugin.Permalink }}"></script>
 
 <script>
     (function (window) {
@@ -57,11 +43,7 @@
 {{- partial "_script/repository.html" . }}
 {{- end}}
 <!-- TODO books -->
-{{- if .IsPage }}
-{{- partial "_script/pv.html" . }}
-{{- end }}
 {{- if in $.Site.Params.mainSections .Type }}
 {{- partial "_script/comment.html" . }}
 {{- end }}
-{{- partial "_script/fancybox.html" . }}
 {{- partial "_script/analytics.html" . }}

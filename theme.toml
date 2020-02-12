@@ -5,7 +5,7 @@ name = "Hugo Theme Pure"
 license = "MIT"
 licenselink = "https://github.com/xiaoheiAh/hugo-theme-pure/blob/master/LICENSE"
 description = "A powerful and pure theme for hugo~enjoy~"
-homepage = "https://xiaohei.im/"
+homepage = "https://levpaul.com/"
 tags = [
   "blog",
   "clean",

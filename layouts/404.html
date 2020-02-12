@@ -11,8 +11,6 @@
                 {{ .Scratch.Set "class_name" "article-date" }}
                 {{- partial "post/date.html" . }}
                 {{- partial "post/category.html" . }}
-                {{- partial "post/tag.html" . }}
-                {{- partial "post/pv.html" . }}
                 <span class="post-comment"><i class="icon icon-comment"></i> <a href="{{ .RelPermalink }}#comments"
                         class="article-comment-link">{{T "article_comments" }}</a></span>
                 {{- partial "post/wc.html" . }}
@@ -22,12 +20,8 @@
                 <p>{{ T "page_not_found_body" }}</p>
                 <a href="/">{{ T "page_not_found_back" }}</a>
             </div>
-            <div class="article-footer">
-                {{- partial "post/copyright.html" . }}
-            </div>
         </article>
         {{- partial "post/comment.html" . }}
     </div>
-    {{- partial "post/donate.html" . }}
 </main>
 {{- end -}}
