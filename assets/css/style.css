@@ -32,7 +32,7 @@ html {
 }
 
 body {
-  margin: 0;
+  margin: 0
 }
 
 article,
@@ -6510,13 +6510,13 @@ body.no-sidebar .sidebar {
 }
 
 .marked-body a {
-  color: #2196f3;
+  color: #0d6e83;
   text-decoration: none;
 }
 
 .marked-body a:focus,
 .marked-body a:hover {
-  color: #0a6ebd;
+  color: #0a8edd;
   text-decoration: none;
 }
 
