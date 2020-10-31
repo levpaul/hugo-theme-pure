@@ -28,7 +28,7 @@
       <p class="article-meta">
         {{- partial "post/date.html" . }}
         {{- partial "post/category.html" . }}
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="{{- .RelPermalink }}#comments" class="article-comment-link">{{- T "article_comments" }}</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="{{- .RelPermalink }}#disqus_thread" class="article-comment-link">{{- T "article_comments" }}</a></span>
         {{- partial "post/wc.html" . }}
       </p>
     </article>

@@ -52,7 +52,6 @@
   <link rel="stylesheet" href="{{ $css.Permalink }}">
   {{ with .Site.Params.customCSS }}
   <link rel="stylesheet" href="{{ . | absURL }}" async>{{ end }}
-<!--  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>-->
   {{/* NOTE: These Hugo Internal Templates can be found starting at https://github.com/spf13/hugo/blob/master/tpl/tplimpl/template_embedded.go#L158 */}}
   {{- template "_internal/opengraph.html" . -}}
   {{- template "_internal/google_news.html" . -}}
